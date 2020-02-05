@@ -1,0 +1,67 @@
+.about {
+    margin-top: 80px;
+}
+.h2-all {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: $main-blue;
+
+    img {
+        max-width: 70px;
+        margin-left: 15px;
+    }
+}
+
+.about-offer {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    width: 100%;
+    .offer {
+        width: 100%;
+        flex-basis: 50%;
+        font-size: 1.4rem;
+    }
+    .main-btn {
+        width: 100%;
+       
+  
+    }
+
+}
+
+.main-list {
+    font-size: 1rem;
+    li {
+        margin-top: 10px;
+    }
+    .sub-list {
+        margin-left: 25px;
+        color: $sec-text;
+    }
+}
+
+@media (max-width:768px) {
+    .about-offer {
+        justify-content: space-around;
+        .main-btn {
+            flex-basis: 50%;
+        }
+    }
+}
+@media (max-width: 470px) {
+    .about-offer {
+        flex-direction: column;
+        text-align: center;
+        .main-btn {
+            a {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .main-list {
+        font-size: 1.2rem;
+    }
+}
