@@ -13,10 +13,11 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.973);
     }
 
     &__logo {
+        flex-basis: 20%;
         text-transform: uppercase;
         color: $main-blue;
         font-weight: 900;
@@ -38,18 +39,23 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 80px;
+        height: 90px;
 
     }
 
+    &__menu {
+        flex-basis: 75%;
+    }
+
     &__list {
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         li {
             list-style: none;
-            margin-left: 20px;
+           
             font-size: .7rem;
 
         }
@@ -79,13 +85,13 @@
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 788px) {
     .header__list {
         position: fixed;
         z-index: 1000;
         transition: .8s;
         top: 0;
-        left: -100%;
+        right: -100%; 
         width: 50%;
         height: 100vh;
         padding: 20px 15px;
@@ -96,12 +102,14 @@
     }
 
     .menu_active {
-        left: 0;
+        right: 0;
+        z-index: 5;
     }
 
     .header__burger {
         display: block;
         position: fixed;
+        z-index: 10;
         height: 25px;
         right: 25px;
         width: 25px;
