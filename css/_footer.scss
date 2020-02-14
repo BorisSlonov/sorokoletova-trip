@@ -3,6 +3,8 @@
     padding-bottom: 25px;
     padding-top: 25px;
     background-color: #f4f4f4;
+    position: relative;
+    z-index: 50;
 }
 
 .footer-container {
@@ -44,6 +46,39 @@
     .brand {
         color: #757575;
         font-size: 0.9rem;
+       
+    }
+    .brand.last {
+        text-align: right;
+        margin-top: 25px;
+        font-size: 0.9rem;
+    }
+    .brand.prelast {
+        text-align: left;
+        margin-top: 25px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 794px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .brand {
+        text-align: center;
+    }
+
+    .footer-item:nth-child(2) {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .footer-item {
+        .brand.prelast {
+            text-align: center;
+        }
+        .brand.last {
+            text-align: center;
+        }
     }
 }
 @media (max-width: 425px) {
