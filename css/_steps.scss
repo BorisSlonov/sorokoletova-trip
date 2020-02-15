@@ -1,0 +1,182 @@
+.steps {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h2 {
+        text-align: center;
+
+        span {
+            border-bottom: 1px dashed $main-blue;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+.step-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+
+
+    &__item {
+        flex-basis: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        color: #0d0c11;
+    }
+
+    &__item1 {
+        text-align: right;
+        margin-right: 35px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/step/step1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            right: 0;
+            top: -50px;
+            width: 100px;
+            height: 100px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/step/stick.png);
+            width: 2px;
+            height: 400px;
+            right: -35px;
+            top: -80px;
+        }
+    }
+
+    &__item2 {
+        text-align: left;
+        margin-left: 35px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/step/step2.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: 0;
+            top: -50px;
+            width: 120px;
+            height: 100px;
+        }
+    }
+
+    &__item3 {
+        text-align: right;
+        margin-right: 35px;
+        margin-top: 80px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/step/step3.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            right: 0;
+            top: -50px;
+            width: 120px;
+            height: 100px;
+        }
+    }
+
+    &__item4 {
+        text-align: left;
+        margin-left: 35px;
+        margin-top: 80px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/step/step4.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: 0;
+            top: -50px;
+            width: 120px;
+            height: 100px;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .step-container {
+        &__item {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 604px) {
+    .step-container {
+        &__item {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 535px) {
+    .step-container {
+        &__item1 {
+            margin-right: 15px;
+
+            &::after {
+                right: -16px;
+            }
+        }
+
+        &__item2 {
+            margin-left: 20px;
+        }
+
+        &__item3 {
+            margin-right: 15px;
+           
+        }
+
+        &__item4 {
+            margin-left: 15px;
+          
+        }
+    }
+}
+
+.read-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 140px;
+    img {
+        max-width: 15px;
+        display: block;
+        margin: 20px auto 0;
+        transform: rotate(90deg);
+    }
+}
+
+.read-work {
+    text-align: center;
+    border: 1px dashed $main-blue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #0d0c11;
+    transition: all .4s;
+    position: relative;
+    &:hover {
+        color: $main-blue;
+    }
+
+  
+}

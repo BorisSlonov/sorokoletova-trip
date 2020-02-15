@@ -1,0 +1,60 @@
+.page-consult {
+    background-color: #f4f4f4;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0 -10px;
+    &__item {
+        margin: 0 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        flex-basis: 33.33333%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 16px 30px 5px rgba(45, 45, 45, 0.05);
+    }
+
+    &__title {
+        color: #2e2e2e;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+        max-width: 95%;
+        flex: 0 0 auto;
+    }
+
+    &__text {
+        color: #0d0c11;
+        font-size: 0.9rem;
+        max-width: 95%;
+        flex: 1 0 auto;
+    }
+
+    &__link {
+        margin-top: 25px;
+        color: $main-blue;
+        font-weight: 700;
+        border-bottom: 1px solid $main-blue;
+        font-size: 1.1rem;
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        padding: 0;
+        &__item {
+            margin: 15px 0;
+        }
+    }
+}
